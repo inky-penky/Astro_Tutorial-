@@ -1,6 +1,9 @@
 ---
+import Navigation from '../components/Navigation.astro';
 
+const pageTitle = "Homepage";
 ---
+
 
 <html lang="en">
 	<head>
@@ -8,9 +11,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<h1>Astronomist</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
 	</body>
 </html>
